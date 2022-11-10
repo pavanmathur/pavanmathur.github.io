@@ -24,11 +24,12 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Pavan Kumar M P</strong> </a>
 									<ul class="icons">
-										<li><a href="https://twitter.com/pavanrashi" class="icon brands fa-twitter"><span class="label">Twitter</span > </a></li> 
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+											<li><a href="https://twitter.com/pavanrashi"  class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://www.facebook.com/profile.php?id=100082545409035" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://www.instagram.com/pawanforreal/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://www.linkedin.com/in/pavan-kumar-m-p-1ba289186/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											<li><a href="https://mail.google.com/mail/u/2/?tab=mm#inbox" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+											<li><a href="https://github.com/pavanmathur" class="icon brands fa-github"><span class="label">Github</span></a></li>
 									</ul>
 								</header>
 								
@@ -111,6 +112,220 @@
 										</article>
 									</div>
 								</section>
+							<!-- section -->
+								<section>
+								<div >
+									<html>
+									<body>
+										<div class='parent'>
+											<div class='child'>
+												<header class = "major">
+													<h2> <strong> Interests</strong> </h2>
+												</header>
+												<ul>
+													<li style="font-size: 18px;">  <strong>  Machine Learning</strong> </li>
+													<li style="font-size: 18px;">  <strong>  Depp Learning</strong> </li>
+													<li style="font-size: 18px;">  <strong>  Transfer Learning</strong> </li>
+													<li style="font-size: 18px;">  <strong>  Time series Analysis</strong> </li>
+													<li style="font-size: 18px;">  <strong>  Anamoly Detection</strong> </li>
+													<li style="font-size: 18px;">  <strong>  Signal Processing </strong> </li>
+													<li style="font-size: 18px;">  <strong>  Condition Based Maintaenance</strong> </li>
+													<li style="font-size: 18px;">  <strong>  Industry 4.0</strong> </li>
+												</ul>
+											</div>
+											
+										</div>
+									</body>
+									</html>
+								</div>
+								</section>
+							<!--section-->
+								<section>
+									<div class='child'>
+										<header class = "major">
+											<h2> <strong> Skills</strong> </h2>
+										</header>
+										<ul>
+											<li style="font-size: 18px;">  <strong>  Python </strong> </li>
+											<li style="font-size: 18px;">  <strong>  HTML </strong> </li>
+											<li style="font-size: 18px;">  <strong>  CSS</strong> </li>
+											<li style="font-size: 18px;">  <strong>  Verilog</strong> </li>
+											<li style="font-size: 18px;">  <strong>  Matlab</strong> </li>
+										</ul>
+									</div>
+								</section>
+							<!--section-->
+							<section>
+								<div class='child'>
+								<script>
+									function readMore(city) {
+										let dots = document.querySelector(`.card[data-city="${city}"] .dots`);
+										let moreText = document.querySelector(`.card[data-city="${city}"] .more`); 
+										let btnText = document.querySelector(`.card[data-city="${city}"] .myBtn`);
+	
+										if (dots.style.display === "none") {
+											dots.style.display = "inline";
+											btnText.textContent = "Read more";
+											moreText.style.display = "none";
+										} else {
+											dots.style.display = "none";
+											tnText.textContent = "Read less"; 
+											moreText.style.display = "inline";
+										}
+									}
+									</script>	
+									<header class = "major">
+										<h2> <strong> Projects</strong> </h2>
+									</header>
+								<ul>
+
+									<li style="font-size: 18px;"> 
+									<div class="card" data-city="buda">
+										<div class="media-body">
+										<a href="#" > Composite Fault Diagnosis of Rotating Machinery With Collaborative Learning</a> 
+										</div >
+										<p>Rotating machinery is a machine with a rotating component to do the energy transformation, which is widely used in vehicle engines, power plants, manufacturing factories, etc. 
+											<span class="dots">...</span>
+											<span class="more" style="display: none;"> Because of the continuous rotation, bearing and gear are easy to wear in rotating machinery, which damages the reliability of the machine. To provide a sustained normal working status, predictive maintenance (PdM) is usually applied to monitor the working health during the machine running by gathering different sensing data. However, highly diverse and massive sensing data increase the challenge to analyze the fault signals in the machine. Besides, the situation with composite faults (i.e., faults that happen in different components in a machine) worsens the difficulty to diagnose the target machine efficiently. To solve this problem, we propose a kind of hierarchy collaborative learning method in this work. Different from conventional centralized learning to analyze heterogeneous sensing data, collaborative learning uses multiple sub-learning units to analyze the local homogeneous sensing data priorly. Then, perform fusion operation for each sub learning units obtained from homogenous sensing data to predict the final composite fault diagnosis results. In this way, we can not only ensure the quality of the signal fault diagnosis but improve the accuracy of the composite fault’s diagnosis significantly. Compared with the centralized learning methods, the proposed collaborative learning method can achieve 12% improvement in accuracy of predicting the composite fault diagnosis.
+											</span>
+										</p>
+										<button onclick="readMore('buda')" class="myBtn">Read more</button>
+									</div>
+
+									<br/>
+		
+									<li style="font-size: 18px;">
+									<div class="card" data-city="pita">
+										<div class="media-body">
+										<a href="#" > Bearing Fault Diagnosis by using Exponential Power Entropy and a Decision threshold for Artificial Neural Network</a>
+										</div>
+										<p> Rotating machinery is used in a variety of industries including petroleum, automotive and food processing, etc. which uses bearings to reduce the friction between the moving parts. 
+											<span class ="dots">...</span>
+											<span class="more" style="display: none;"> Besides, bearings are prone to wear due to a variety of conditions such as speed variations, heavy loads, and lengthy periods of operation. Therefore, real-time monitoring and diagnosis of bearing faults will improve safety, avoiding unplanned downtime and lowering the cost. Condition-based maintenance (CbM) is usually employed to observe the faults that arises in a healthy condition of the machine, running by gathering sensing vibration signals. However, the massive sensing data increase the challenge to analyze the fault signal will result in high computing time. To solve this problem, we propose an Exponential Power Entropy (EPE)-based feature extraction and selection approach to minimize the computing data and used a feed-forward neural network for fault classification with a proposed decision threshold score to improve the prediction accuracy. Compared with the conventional approaches, the proposed method not only reduce the computing time by 64.8% but also increase the accuracy of fault diagnosis up to 99.2%.
+											</span>
+										</p>
+										<button onclick="readMore('pita')" class="myBtn">Read more</button>
+									</div>	
+
+									<br/>
+									<li style="font-size: 18px;">
+									<div class="card" data-city="radha">
+										<div class="media-body">
+											<a href="#" > NN-based Bearing Fault Diagnosis Using Exponential Power Entropy and a Decision Threshold</a>
+										</div>
+										<p>Rotating machinery is widely employed in various industries, including petroleum, automotive, food processing, etc. Bearings are commonly utilized in rotating machinery to alleviate friction and stress while performing rotational or linear movement of various subcomponents.
+											<span class="dots">...</span>
+											<span class="more" style="display: none;"> Besides, bearings are prone to wear due to a variety of conditions such as speed variations, heavy loads, and lengthy periods of operation. Therefore, real-time bearing monitoring and diagnostics are critical for preventing bearing failures, improving safety, avoiding unplanned downtime of industrial assembly lines, and lowering costs. To ensure a consistent operational condition, Predictive Maintenance (PdM) monitors the machine's health by acquiring sensory data. However, highly diverse and massive sensing data increases the challenge of analyzing the fault signals in the machine. To solve this problem, we proposed an Exponential Power Entropy (EPE) based feature extraction method in this work, which extracts useful information from the large-scale sensing data and feeds it to the neural network for further Neural Network (NN)-based fault diagnosis. Besides, we propose a Decision Threshold (DT) approach to increase the prediction accuracy of neural networks. In this way, we can not only ensure the quality of the fault diagnosis but also reduce the computing time significantly. In comparison to the traditional Shannon's Spectral Entropy (SSE)-based feature extraction method, the proposed EPE-based feature extraction method can predict bearing fault diagnosis with an accuracy of up to 98.8 % while reducing model complexity by 98.3 % compared to the traditional deep neural network approaches.
+											</span>
+										</p>
+										<button onclick="readMore('radha')" class="myBtn">Read more</button>
+									</div>
+
+									<br/>
+
+									<li style="font-size: 18px;">
+									<div class="card" data-city="krish">
+										<div class="media-body">
+										<a href="#" > Time Series-based Sensor Selection and Lightweight Neural Architecture Search for RUL Estimation in Future Industry 4.0</a>
+										</div>
+										<p> Industry 4.0 is the current development trend in manufacturing technology. For prognostic and health management (PHM) systems, a major task is to predict the remaining useful life (RUL) of a machine. 
+											<span class="dots">....</span>
+											<span class="more" style="display: none;">To have precise RUL information, massive sensors should be involved, which leads to the dramatic cost of sensor network construction. Therefore, many sensor selection methods have been proposed to remove the redundant sensors under a certain constraint of RUL estimation. However, those approaches do not consider time-series sensing data, which is an intrinsic feature of mechanical signals. Therefore, the current research suffers from sensor under- killing problems due to the pessimistic consideration. To solve this problem, this work first considers the time-series sensing data to propose an integrated group-based valuable sensor selection algorithm by using the Least Absolute Shrinkage and Selection Operator (LASSO) property. In addition, to reduce the computing and hardware overhead, we further propose a heuristic neural architecture search (NAS) method to reduce the number of neurons in each neural network for further RUL estimation. To verify the proposed approaches, we use the Commercial Modular Aero-Propulsion System Simulation (C-MAPSS) dataset and utilize the PHM score to evaluate the performance of RUL estimation. Compared with the conventional methods, the proposed approach can reduce the PHM score by 63% and employ fewer sensors to meet the strict constraint of the PHM score with a shorter computing latency of 37%. In addition to using fewer sensors, the proposed heuristic NAS method cuts the hardware overhead of the RUL estimator by 97% compared to the standard LASSO-based approach. 
+											</span>
+										</p>
+										<button onclick="readMore('krish')" class="myBtn">Read more</button>
+									</div>
+									<br/>
+
+									<li style="font-size: 18px;">
+									<div class="card" data-city="love">
+										<div class="media-body">
+										<a href="#" > Design and Verification of DDR SDRAM Memory Controller Using SystemVerilog For Higher Coverage</a>
+										</div>
+										<p>In present electronic systems, DDR SDRAM (Double Data Rate Synchronous Dynamic Random-AccessMemory) is an next level advanced version of regular SDRAM, and it was developed with advanced key features such as effective use of memory bandwidth and its capability to transact data on both edges of clock cycles.
+											<span class="dots">...</span>
+											<span class="more" style="display: none;"> DDR SDRAM is widely used in computer applications like laptops, DSP processing systems and networking. Cost and speed are the two important factors in designing memories like DDR SDRAM which will meet the standards in the field of DSP applications. Because of its high speed, burst access and pipeline feature DDR SDRAM becomes more popular. The main basic operations of DDR SDRAM memory controller are very much common to that of SDR (Single Data Rate) SDRAM memory controller and they differ only in their circuit design. DDR simply use sophisticated circuit techniques to achieve high speed in order to perform a greater number of operations per clock cycles. DDR SDRAM uses double data rate architecture wherein DDR SDRAM (also known DDR1) means transaction of data on both the rising and falling edge of the clock cycles. The DDR SDRAM controller makes many lowlevel tasks invisible to the user like refresh, initialization and timings. DDR SDRAM also designed with objective of using proper commands like Read/Write accesses, proper active and pre-charge command etc. In this work a DDR SDRAM controller is designed using Verilog HDL and Verification is carried out using SystemVerilog by Questasim Tool. Functional coverage of 100% is achieved by applying randomized test cases. 
+											</span>
+										</p>
+										<button onclick="readMore('love')" class="myBtn">Read more</button>
+									</div>
+								</ul>	
+							</section>
+
+							<!--section-->
+							<section>
+								<div class='child'>
+									<header class = "major">
+										<h2> <strong> Publications</strong> </h2>
+									</header>
+									<ul>
+										<li style="font-size: 18px;">   P. Kumar M.P. and S. K. Panda, "Design and Verification of DDR SDRAM Memory Controller Using SystemVerilog For Higher Coverage," 2019 International Conference on Intelligent Computing and Control Systems (ICCS), 2019.</strong> </li>
+										<li style="font-size: 18px;">   Pavan Kumar MP, Cheng-Jyun Tang, and Kun-Chih (Jimmy) Chen, "Composite Fault Diagnosis of Rotating Machinery With Collaborative Learning," Int. Symp. VLSI Design, Automation, and Test (VLSI-DAT’22), Apr. 2022.</strong> </li>
+										<li style="font-size: 18px;">   Pavan Kumar MP and Kun-Chih (Jimmy) Chen, "Bearing Fault Diagnosis by Using Exponential Power Entropy and a Decision Threshold for Artificial Neural Network," Proc. 2022 VLSI Design/CAD Symposium, Aug. 2022.</strong> </li>
+										<li style="font-size: 18px;">   Pavan Kumar MP and Kun-Chih (Jimmy) Chen, "NN-Based Bearing Fault Diagnosis by Using Exponential Power Entropy and a Decision Threshold" IEEE ISCAS, April. 2023.</strong> </li>
+										<li style="font-size: 18px;">   Pavan Kumar MP and Kun-Chih (Jimmy) Chen, "Time Series-based Sensor Selection and Lightweight Neural Architecture Search for RUL Estimation in Future Industry 4.0" IEEE JETCAS, 2023.</strong> </li>
+									</ul>
+								</div>
+							</section>
+							<!-- Seven -->
+							<section>
+								<!-- Form -->
+								<h2>Contact Me</h2>
+
+								<form method="post" action="#">
+									<div class="row gtr-uniform">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+										</div>
+										<!-- Break -->
+										<div class="col-12">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Category -</option>
+												<option value="1">Academics - Related</option>
+												<option value="1">Working - Related</option>
+												<option value="1">Buisness - Related</option>
+												<option value="1">Personal life - Related</option>
+											</select>
+										</div>
+										<!-- Break -->
+										<div class="col-4 col-12-small">
+											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+											<label for="demo-priority-low">Low</label>
+										</div>
+										<div class="col-4 col-12-small">
+											<input type="radio" id="demo-priority-normal" name="demo-priority">
+											<label for="demo-priority-normal">Normal</label>
+										</div>
+										<div class="col-4 col-12-small">
+											<input type="radio" id="demo-priority-high" name="demo-priority">
+											<label for="demo-priority-high">High</label>
+										</div>
+										<!-- Break -->
+										<div class="col-6 col-12-small">
+											<input type="checkbox" id="demo-copy" name="demo-copy">
+											<label for="demo-copy">Email me a copy</label>
+										</div>
+										<div class="col-6 col-12-small">
+											<input type="checkbox" id="demo-human" name="demo-human" checked>
+											<label for="demo-human">I am a human</label>
+										</div>
+										<!-- Break -->
+										<div class="col-12">
+											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<!-- Break -->
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="primary" /></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
 							</div>
 						</div>
 
@@ -132,7 +347,7 @@
 									</header>
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Generic</a></li>
+										<li><a href="personal.html">Personal</a></li>
 										<li><a href="elements.html">Elements</a></li>
 										<li>
 											<span class="opener">Submenu</span>
@@ -163,20 +378,20 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Ante interdum</h2>
+										<h2>Recent Gallery</h2>
 									</header>
 									<div class="mini-posts">
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<a href="#" class="image"><img src="images/rahil.jpg" alt="" /></a>
+											<p>With Mr. Rahil Ansari, Audi President Taiwan.  </p>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<a href="#" class="image"><img src="images/wutai.jpg" alt="" /></a>
+											<p> WUtai PingTung, Relaxation mode</p>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											<a href="#" class="image"><img src="images/pawan11.jpg" alt="" /></a>
+											<p> Sometimes, exhusted with coding</p>
 										</article>
 									</div>
 									<ul class="actions">
@@ -189,18 +404,18 @@
 									<header class="major">
 										<h2>Get in touch</h2>
 									</header>
-									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<p> if you guys need any help regarding my researach, please feel free to mail to me. <br/> for sure, i'll reply as sooon as possible.</p>
 									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-										<li class="icon solid fa-phone">(000) 000-0000</li>
-										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-										Nashville, TN 00000-0000</li>
+										<li class="icon solid fa-envelope"><a href="#">pavanforyou94@gmail.com</a></li>
+										<li class="icon solid fa-phone">(886) 0958-121354</li>
+										<li class="icon solid fa-home"> No.70 Lien-hai RD.,Kaohsiung,Taiwan 804201
+										</li>
 									</ul>
 								</section>
 
 							<!-- Footer -->
 								<footer id="footer">
-									<p > Designed and Maintained by Pavan Kumar M P</p>
+									<p > Designed by Pavan Kumar</p>
 								</footer>
 
 						</div>

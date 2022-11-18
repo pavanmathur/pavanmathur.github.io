@@ -490,61 +490,74 @@
 								<header class = "major">
 									<h2> <strong> Contact Me</strong> </h2>
 								</header>
-								
-
-								<form method="post" action="#">
-									<div class="row gtr-uniform">
-										<div class="col-6 col-12-xsmall">
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+								<div class="row mt-4">
+									<div class="col-lg-6">
+										<!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+										<div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+											<div id="embedmap-canvas" style="height:90%; width:100%;max-width:100%;">
+												<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=kaohsiung&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+												</iframe>
+											</div>
+											<a class="googlemaps-html" href="" id="get-data-forembedmap"></a>
+											<style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+											</style>
 										</div>
-										<div class="col-6 col-12-xsmall">
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>	
+									<div class="col-lg-6">
+									<form method="post" action="#">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											</div>
+											<!-- Break -->
+											<div class="col-12">
+												<select name="demo-category" id="demo-category">
+													<option value="">- Category -</option>
+													<option value="1">Academics - Related</option>
+													<option value="1">Working - Related</option>
+													<option value="1">Buisness - Related</option>
+													<option value="1">Personal life - Related</option>
+												</select>
+											</div>
+											<!-- Break -->
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-normal" name="demo-priority">
+												<label for="demo-priority-normal">Normal</label>
+											</div>
+											<div class="col-4 col-12-small">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<!-- Break -->
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">I am a human</label>
+											</div>
+											<!-- Break -->
+											<div class="col-12">
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<!-- Break -->
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" class="primary" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
 										</div>
-										<!-- Break -->
-										<div class="col-12">
-											<select name="demo-category" id="demo-category">
-												<option value="">- Category -</option>
-												<option value="1">Academics - Related</option>
-												<option value="1">Working - Related</option>
-												<option value="1">Buisness - Related</option>
-												<option value="1">Personal life - Related</option>
-											</select>
-										</div>
-										<!-- Break -->
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-											<label for="demo-priority-low">Low</label>
-										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-normal" name="demo-priority">
-											<label for="demo-priority-normal">Normal</label>
-										</div>
-										<div class="col-4 col-12-small">
-											<input type="radio" id="demo-priority-high" name="demo-priority">
-											<label for="demo-priority-high">High</label>
-										</div>
-										<!-- Break -->
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-copy" name="demo-copy">
-											<label for="demo-copy">Email me a copy</label>
-										</div>
-										<div class="col-6 col-12-small">
-											<input type="checkbox" id="demo-human" name="demo-human" checked>
-											<label for="demo-human">I am a human</label>
-										</div>
-										<!-- Break -->
-										<div class="col-12">
-											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<!-- Break -->
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary" /></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-										</div>
+									</form>
 									</div>
-								</form>
 							</section>
 							</div>
 						</div>
@@ -578,8 +591,7 @@
 												<li><a href="#">Family</a></li>
 											</ul>
 										</li>
-										<li><a href="#"> Activities</a></li>
-										<li><a href="#"> First time</a></li>
+										<li><a href="es.html"> Experience Sharing </a></li>
 									</ul>
 								</nav>
 

@@ -47,6 +47,8 @@
 			}
 		</style>
 		<script src="https://unpkg.com/geoip-lite@1.1.3/index.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
 	</head>
 
 	
@@ -520,13 +522,14 @@
 										</div>
 									</div>	
 									<div class="col-lg-6">
-									<form method="post" action="#">
+									<form id="contact-form" method="post" action="#">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+
+												<input type="text" name="name" id="name" value="" placeholder="Name" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												<input type="email" name="email" id="email" value="" placeholder="Email" />
 											</div>
 											<!-- Break -->
 											<div class="col-12">
@@ -539,40 +542,22 @@
 												</select>
 											</div>
 											<!-- Break -->
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<!-- Break -->
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">I am a human</label>
-											</div>
-											<!-- Break -->
 											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
 											</div>
 											<!-- Break -->
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
-													<li><input type="reset" value="Reset" /></li>
+													<li><input type="submit" value="Send" class="primary" /></li>
+													<li><input type="submit" value="Reset" /></li>
 												</ul>
+											</div>
+											<div id="form-success" style="display: none;">
+												Thank you for contacting us! We will get back to you as soon as possible.
 											</div>
 										</div>
 									</form>
+
 									</div>
 
 									<div class="center">
@@ -702,6 +687,22 @@
 					document.getElementById('flag').appendChild(flagImg);
 				  });
 			</script>
+
+			<!-- CONTACT FORM -->
+
+			<script>
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+				event.preventDefault();
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var message = document.getElementById('message').value;
+				var to = "pavanforyou94@gmail.com";
+				var subject = "Contact form submission";
+				var body = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+				window.open("mailto:" + to + "?subject=" + subject + "&body=" + body);
+				});
+			</script>
+
 
 
 

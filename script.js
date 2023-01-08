@@ -21,3 +21,15 @@ window.onload=function(){
       localStorage.setItem('data-theme','light');
     }
   };
+
+
+  function updateViewCount() {
+    // Get the current view count
+    var viewCount = parseInt(document.getElementById('view-count').innerHTML);
+    
+    // Increment the view count by 1
+    viewCount += 1;
+    
+    // Update the HTML element with the new view count
+    document.getElementById('view-count').innerHTML = viewCount;
+  }

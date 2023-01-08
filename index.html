@@ -30,7 +30,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-	
 </head>
 
 <html>
@@ -40,11 +39,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
+		<style>
+			.center {
+			  display: block;
+			  margin: auto;
+			}
+		</style>
 	</head>
 
-	<body class="is-preload">  
-		   
+	<body class="is-preload" onload="updateViewCount()">
+	
+
 	<script src="./script.js"></script>
 	
 
@@ -58,7 +63,9 @@
 							<!-- Header -->
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Pavan Kumar M P</strong> </a>
-
+									<a class="logo">You are visiting from:</a>
+									<a id="country"></a>
+									<img id="flag" src="" alt="Flag">
 									<ul class="icons">
 											<li><a href="https://twitter.com/pavanrashi"  class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
 											<li><a href="https://www.facebook.com/profile.php?id=100082545409035" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -567,6 +574,11 @@
 										</div>
 									</form>
 									</div>
+
+									<div class="center">
+									<p>Number of Visitor's</p> 
+									<p id="view-count">0</p>
+									</div>
 							</section>
 							</div>
 						</div>
@@ -650,8 +662,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-	
 		<!-- Scroll to Bottom -->
+			<script>
+				// Make a request to the ipapi API to get the visitor's location information
+				fetch('https://ipapi.co/json')
+				.then(response => response.json())
+				.then(data => {
+					// Update the page with the visitor's country and flag
+					document.getElementById('country').innerHTML = data.country_name;
+					document.getElementById('flag').src = `https://www.countryflags.io/${data.country_code}/flat/64.png`;
+				});
+			</script>
+
+
+
+
 		<i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 	
 		<!-- Back to Top -->

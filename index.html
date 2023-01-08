@@ -30,6 +30,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <html>
@@ -45,14 +46,13 @@
 			  margin: auto;
 			}
 		</style>
+		<script src="https://unpkg.com/geoip-lite@1.1.3/index.min.js"></script>
 	</head>
 
-	<body class="is-preload" onload="updateViewCount()">
 	
 
 	<script src="./script.js"></script>
 	
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -63,9 +63,9 @@
 							<!-- Header -->
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Pavan Kumar M P</strong> </a>
-									<a class="logo">You are visiting from:</a>
-									<a id="country"></a>
-									<img id="flag" src="" alt="Flag">
+									<a class="logo"><strong>Hello, you are visiting from: <span id="country"></span></strong> </a>
+									<div id="flag"></div>
+
 									<ul class="icons">
 											<li><a href="https://twitter.com/pavanrashi"  class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
 											<li><a href="https://www.facebook.com/profile.php?id=100082545409035" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -85,7 +85,7 @@
 											<p><strong>"Be Happy with what you have.</strong><br /> <strong>Be excited about what you want" </strong></p>
 										</header>
 
-										<p> <strong>My main research focus is on signal processing based feature extraction methods and machine learning based optimization algorithms for neural networks to predict anomalies and RUL. <br /> 1. Developed a feature extraction method for time series signal denoising and anomaly detection.<br /> 2. Developing an algorithm for transfer learning, to make more efficient applications with low hardware overhead by utilizing the previously trained models. <br /> 3. Developing algorithms for neural networks, such as hardware-friendly Activation functions. <br /> 4. Developing an algorithm for predicting the remaining useful lifetime of rotating machinery. <br /> Furthurmore, I have published two conferences as of 2022/09/20. I'm writing a journal and a conference paper now, which I will publish soon.</strong></p>
+										<p> <strong>  My research focuses on developing signal processing-based feature extraction methods and machine learning-based optimization algorithms for neural networks to predict anomalies and remaining useful lifetime (RUL). <br/>  1. I have developed a feature extraction method for time series signal denoising and anomaly detection.<br/> 2. I am also working on an algorithm for transfer learning to make applications more efficient and reduce hardware overhead by using previously trained models. <br/> 3. Additionally, I am developing hardware-friendly activation functions for neural networks and an algorithm for predicting the RUL of rotating machinery. <br/>  I have published two conference papers and am currently writing a journal paper and a conference paper, which I will publish soon. </strong></p>
 										<ul class="actions">
 											<li><a href="Pavan's Resume.pdf" class="button big">Download CV</a></li>
 										</ul>
@@ -576,10 +576,9 @@
 									</div>
 
 									<div class="center">
-									<p>Number of Visitor's</p> 
-									<p id="view-count">0</p>
+									<p>Number of visits: <span id="visit-count">0</span></p>
 									</div>
-							</section>
+							</section> 
 							</div>
 						</div>
 
@@ -663,17 +662,46 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 		<!-- Scroll to Bottom -->
-			<script>
-				// Make a request to the ipapi API to get the visitor's location information
-				fetch('https://ipapi.co/json')
-				.then(response => response.json())
-				.then(data => {
-					// Update the page with the visitor's country and flag
-					document.getElementById('country').innerHTML = data.country_name;
-					document.getElementById('flag').src = `https://www.countryflags.io/${data.country_code}/flat/64.png`;
-				});
-			</script>
 
+		<!-- visitor count and country flag -->
+			<script>
+				// Initialize the visit count to 0
+				let count = 0;
+			
+				// Check if the visit count is stored in local storage
+				if (localStorage.getItem('count')) {
+				// If it is, retrieve the value and update the count
+				count = parseInt(localStorage.getItem('count'));
+				}
+			
+				// Increment the count by 1
+				count += 1;
+			
+				// Update the count in local storage
+				localStorage.setItem('count', count);
+			
+				// Update the count on the page
+				document.getElementById('visit-count').innerHTML = count;
+			</script>
+			
+			
+
+			<script>
+				fetch('https://ipapi.co/json/')
+				  .then(response => response.json())
+				  .then(data => {
+					// Update the country on the page
+					document.getElementById('country').innerHTML = data.country_name;
+			  
+					// Create an image element for the flag
+					const flagImg = document.createElement('img');
+					flagImg.src = `https://cdn.jsdelivr.net/gh/hjnilsson/country-flags@latest/svg/${data.country_code.toLowerCase()}.svg`;
+					flagImg.alt = `Flag of ${data.country_name}`;
+					flagImg.style.maxWidth = '60px';
+					// Add the flag image to the page
+					document.getElementById('flag').appendChild(flagImg);
+				  });
+			</script>
 
 
 

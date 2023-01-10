@@ -19,6 +19,12 @@
 		<link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 		<!-- Bootstrap + Meyawo main styles -->
 		<link rel="stylesheet" href="assets/css/meyawo.css">
+		<style>
+			.scrollable {
+			  max-height: 150px; /* Set the maximum height of the container */
+			  overflow: hidden; /* Hide the overflow */
+			}
+			</style>
 
 	</head>
 	<body class="is-preload">
@@ -143,16 +149,12 @@
 										</div>
 										<div class="blog-card-body">
 											<h5 class="blog-card-title"> Taiwan makes my thinking capacity wider </h6>
-
 											<p class="blog-card-caption">
 												<a href="#">By: Admin</a>
 											</p>
-											<p>aiwan is a country that has a rich history and diverse culture, which has undoubtedly contributed to the expansion of my thinking capacity. Being immersed in such a vibrant and dynamic society has allowed me to encounter new ideas and perspectives that have broadened my understanding of the world. One aspect of Taiwan that particularly enhances my cognitive abilities is its multilingualism. As a country with Mandarin Chinese, Taiwanese Hokkien, and English as its official languages, I am constantly exposed to different linguistic and cultural influences. This has not only improved my language skills, but also allowed me to understand and appreciate the complexities and nuances of communication. In addition, Taiwan's inclusive and welcoming society has exposed me to a wide range of people from diverse backgrounds, each with their own unique experiences and viewpoints. Engaging with these individuals has encouraged me to consider different angles and approaches to problem-solving, leading to a more well-rounded and adaptive way of thinking. Overall, Taiwan has played a significant role in my personal and intellectual growth by providing me with endless opportunities for learning and discovery. Its multifaceted culture and society have pushed me to think critically and broaden my horizons, and I am grateful for the ways in which it has enriched my life.</p>
-
-											<p><b></b></p>
-											<p></p>
-
-											<a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+											<p class="scrollable">Taiwan is a country that has a rich history and diverse culture, which has undoubtedly contributed to the expansion of my thinking capacity. Being immersed in such a vibrant and dynamic society has allowed me to encounter new ideas and perspectives that have broadened my understanding of the world. One aspect of Taiwan that particularly enhances my cognitive abilities is its multilingualism. As a country with Mandarin Chinese, Taiwanese Hokkien, and English as its official languages, I am constantly exposed to different linguistic and cultural influences. This has not only improved my language skills, but also allowed me to understand and appreciate the complexities and nuances of communication. In addition, Taiwan's inclusive and welcoming society has exposed me to a wide range of people from diverse backgrounds, each with their own unique experiences and viewpoints. Engaging with these individuals has encouraged me to consider different angles and approaches to problem-solving, leading to a more well-rounded and adaptive way of thinking. Overall, Taiwan has played a significant role in my personal and intellectual growth by providing me with endless opportunities for learning and discovery. Its multifaceted culture and society have pushed me to think critically and broaden my horizons, and I am grateful for the ways in which it has enriched my life.</p>
+											
+											<a href="#" class="blog-card-link" onclick="event.preventDefault(); toggleText(this); this.previousElementSibling.style.maxHeight = this.previousElementSibling.style.maxHeight === '150px' ? 'none' : '150px'">Read more <i class="ti-angle-double-right"></i></a>
 										</div>
 									</div><!-- end of blog wrapper -->
 
@@ -163,14 +165,12 @@
 										</div>
 										<div class="blog-card-body">
 											<h5 class="blog-card-title">About My lab working culture</h6>
-
 											<p class="blog-card-caption">
 												<a href="#">By: Admin</a>
-											</p>
-											
-											<p>In general, computer science labs at universities tend to have a focused and dedicated working environment, as the research being conducted is often highly specialized and requires a high level of concentration and attention to detail. Lab members are usually expected to work independently, as well as collaborate with others in their research group. In terms of culture, it is common for academic labs to have a hierarchical structure, with the principal investigator or professor at the top, followed by postdoctoral researchers, graduate students, and undergraduate students. There may also be a lab manager or other administrative staff to assist with the day-to-day running of the lab. It is also important to note that universities in Taiwan, like many other countries, prioritize academic research and publication, so it is likely that the working culture in a computer science lab will be geared towards producing high-quality research papers and making significant contributions to the field. This may involve long hours and a heavy workload, but it is also an opportunity for lab members to make a significant impact and contribute to the advancement of knowledge in their field.</p>
+											</p>		
+											<p class="scrollable"> In general, computer science labs at universities tend to have a focused and dedicated working environment, as the research being conducted is often highly specialized and requires a high level of concentration and attention to detail. Lab members are usually expected to work independently, as well as collaborate with others in their research group. In terms of culture, it is common for academic labs to have a hierarchical structure, with the principal investigator or professor at the top, followed by postdoctoral researchers, graduate students, and undergraduate students. There may also be a lab manager or other administrative staff to assist with the day-to-day running of the lab. It is also important to note that universities in Taiwan, like many other countries, prioritize academic research and publication, so it is likely that the working culture in a computer science lab will be geared towards producing high-quality research papers and making significant contributions to the field. This may involve long hours and a heavy workload, but it is also an opportunity for lab members to make a significant impact and contribute to the advancement of knowledge in their field.</p>
 
-											<a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+											<a href="#" class="blog-card-link" onclick="event.preventDefault(); toggleText(this); this.previousElementSibling.style.maxHeight = this.previousElementSibling.style.maxHeight === '150px' ? 'none' : '150px'">Read more <i class="ti-angle-double-right"></i></a>
 										</div>
 									</div><!-- end of blog wrapper -->
 
@@ -259,6 +259,15 @@
 				</div>
 
 		</div>
+
+
+
+	<!-- toggle read more and read less-->>
+		<script>
+			function toggleText(el) {
+		  	el.innerHTML = el.innerHTML === 'Read more <i class="ti-angle-double-right"></i>' ? 'Read less <i class="ti-angle-double-right"></i>' : 'Read more <i class="ti-angle-double-right"></i>';
+			}
+		</script>
 
 	<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>

@@ -894,7 +894,7 @@
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/your-username/link-lock-repo" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/pavanmathur/link-lock-repo" target="_blank" rel="noopener">
   Code
 </a>
 
@@ -921,7 +921,7 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/your-username/link-lock-repo" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/pavanmathur/link-lock-repo" target="_blank" rel="noopener">
     <i class="fab fa-github mr-1"></i>
     Code
   </a>
@@ -962,7 +962,6 @@
   <input type="password" id="password" name="password" required><br><br>
   <input type="submit" value="Encrypt Link">
 </form>
-<p id="encrypted-link-display"></p>
 <p id="encrypted-link"></p>
 <script>
   function encryptLink(event) {
@@ -971,9 +970,9 @@
     const password = document.getElementById('password').value;
     // Simple encryption example (do not use in production)
     const encrypted = btoa(JSON.stringify({ url, password }));
-    const encryptedLink = `${window.location.origin}${window.location.pathname}?data=${encrypted}`;
-    document.getElementById('encrypted-link-display').innerText = `Encrypted Data: ${encrypted}`;
-    document.getElementById('encrypted-link').innerHTML = `<a href="${encryptedLink}" target="_blank">Encrypted Link</a>`;
+    const baseLink = "https://pavanmathur.github.io/project/internal-project/?data=";
+    const encryptedLink = `${baseLink}${encrypted}`;
+    document.getElementById('encrypted-link').innerHTML = `Encrypted Data: <a href="${encryptedLink}" target="_blank">${encryptedLink}</a>`;
   }
 
   function decryptLink() {

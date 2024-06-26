@@ -34,7 +34,6 @@
   &lt;input type=&#34;password&#34; id=&#34;password&#34; name=&#34;password&#34; required&gt;&lt;br&gt;&lt;br&gt;
   &lt;input type=&#34;submit&#34; value=&#34;Encrypt Link&#34;&gt;
 &lt;/form&gt;
-&lt;p id=&#34;encrypted-link-display&#34;&gt;&lt;/p&gt;
 &lt;p id=&#34;encrypted-link&#34;&gt;&lt;/p&gt;
 &lt;script&gt;
   function encryptLink(event) {
@@ -43,9 +42,9 @@
     const password = document.getElementById(&#39;password&#39;).value;
     // Simple encryption example (do not use in production)
     const encrypted = btoa(JSON.stringify({ url, password }));
-    const encryptedLink = `${window.location.origin}${window.location.pathname}?data=${encrypted}`;
-    document.getElementById(&#39;encrypted-link-display&#39;).innerText = `Encrypted Data: ${encrypted}`;
-    document.getElementById(&#39;encrypted-link&#39;).innerHTML = `&lt;a href=&#34;${encryptedLink}&#34; target=&#34;_blank&#34;&gt;Encrypted Link&lt;/a&gt;`;
+    const baseLink = &#34;https://pavanmathur.github.io/project/internal-project/?data=&#34;;
+    const encryptedLink = `${baseLink}${encrypted}`;
+    document.getElementById(&#39;encrypted-link&#39;).innerHTML = `Encrypted Data: &lt;a href=&#34;${encryptedLink}&#34; target=&#34;_blank&#34;&gt;${encryptedLink}&lt;/a&gt;`;
   }
 
   function decryptLink() {

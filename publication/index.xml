@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Academic</title>
-    <link>/publication/</link>
-      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <title>Publications | Pavan Kumar</title>
+    <link>https://pavanmathur.github.io/publication/</link>
+      <atom:link href="https://pavanmathur.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://pavanmathur.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
-      <link>/publication/</link>
+      <link>https://pavanmathur.github.io/publication/</link>
     </image>
     
     <item>
       <title>Mitigate the Negative TL using Adaptive Thresholding for Fault Diagnosis</title>
-      <link>/publication/conference-paper_4/</link>
+      <link>https://pavanmathur.github.io/publication/conference-paper_4/</link>
       <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper_4/</guid>
+      <guid>https://pavanmathur.github.io/publication/conference-paper_4/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -35,9 +35,9 @@
     
     <item>
       <title>NN-based Bearing Fault Diagnosis Using Exponential Power Entropy and a Decision Threshold</title>
-      <link>/publication/conference-paper_3/</link>
+      <link>https://pavanmathur.github.io/publication/conference-paper_3/</link>
       <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper_3/</guid>
+      <guid>https://pavanmathur.github.io/publication/conference-paper_3/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -56,9 +56,9 @@
     
     <item>
       <title>Time Series-Based Sensor Selection and Lightweight Neural Architecture Search for RUL Estimation in Future Industry 4.0</title>
-      <link>/publication/journal-article_1/</link>
+      <link>https://pavanmathur.github.io/publication/journal-article_1/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article_1/</guid>
+      <guid>https://pavanmathur.github.io/publication/journal-article_1/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -77,9 +77,9 @@
     
     <item>
       <title>Composite Fault Diagnosis of Rotating Machinery With Collaborative Learning</title>
-      <link>/publication/conference-paper_2/</link>
+      <link>https://pavanmathur.github.io/publication/conference-paper_2/</link>
       <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper_2/</guid>
+      <guid>https://pavanmathur.github.io/publication/conference-paper_2/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -98,9 +98,9 @@
     
     <item>
       <title>Design and Verification of DDR SDRAM Memory Controller Using SystemVerilog For Higher Coverage</title>
-      <link>/publication/conference-paper_1/</link>
+      <link>https://pavanmathur.github.io/publication/conference-paper_1/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper_1/</guid>
+      <guid>https://pavanmathur.github.io/publication/conference-paper_1/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

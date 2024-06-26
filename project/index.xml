@@ -5,7 +5,7 @@
     <link>https://pavanmathur.github.io/project/</link>
       <atom:link href="https://pavanmathur.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://pavanmathur.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
@@ -13,24 +13,82 @@
     </image>
     
     <item>
+      <title>Link Lock - Password-protect Links</title>
+      <link>https://pavanmathur.github.io/project/internal-project/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://pavanmathur.github.io/project/internal-project/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Link Lock is a web application designed to securely password-protect links, ensuring safe sharing of sensitive information online.&lt;/p&gt;
+&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;🔒 Password Protection&lt;/strong&gt;: Encrypts URLs with a user-defined password.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔐 Secure Sharing&lt;/strong&gt;: Safely share links with authorized users only.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;⚙️ Customizable Settings&lt;/strong&gt;: Customize expiration dates and access permissions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-user-interface&#34;&gt;Example User Interface&lt;/h3&gt;
+&lt;p&gt;Below is an interactive form for password-protecting a link:&lt;/p&gt;
+&lt;form id=&#34;link-lock-form&#34; onsubmit=&#34;encryptLink(event)&#34;&gt;
+  &lt;label for=&#34;url&#34;&gt;Enter the URL:&lt;/label&gt;&lt;br&gt;
+  &lt;input type=&#34;text&#34; id=&#34;url&#34; name=&#34;url&#34; required&gt;&lt;br&gt;&lt;br&gt;
+  &lt;label for=&#34;password&#34;&gt;Enter the Password:&lt;/label&gt;&lt;br&gt;
+  &lt;input type=&#34;password&#34; id=&#34;password&#34; name=&#34;password&#34; required&gt;&lt;br&gt;&lt;br&gt;
+  &lt;input type=&#34;submit&#34; value=&#34;Encrypt Link&#34;&gt;
+&lt;/form&gt;
+&lt;p id=&#34;encrypted-link-display&#34;&gt;&lt;/p&gt;
+&lt;p id=&#34;encrypted-link&#34;&gt;&lt;/p&gt;
+&lt;script&gt;
+  function encryptLink(event) {
+    event.preventDefault();
+    const url = document.getElementById(&#39;url&#39;).value;
+    const password = document.getElementById(&#39;password&#39;).value;
+    // Simple encryption example (do not use in production)
+    const encrypted = btoa(JSON.stringify({ url, password }));
+    const encryptedLink = `${window.location.origin}${window.location.pathname}?data=${encrypted}`;
+    document.getElementById(&#39;encrypted-link-display&#39;).innerText = `Encrypted Data: ${encrypted}`;
+    document.getElementById(&#39;encrypted-link&#39;).innerHTML = `&lt;a href=&#34;${encryptedLink}&#34; target=&#34;_blank&#34;&gt;Encrypted Link&lt;/a&gt;`;
+  }
+
+  function decryptLink() {
+    const params = new URLSearchParams(window.location.search);
+    const data = params.get(&#39;data&#39;);
+    if (data) {
+      const decrypted = JSON.parse(atob(data));
+      const userPassword = prompt(&#39;Enter the password to decrypt the link:&#39;);
+      if (userPassword === decrypted.password) {
+        window.location.href = decrypted.url;
+      } else {
+        alert(&#39;Incorrect password.&#39;);
+      }
+    }
+  }
+
+  if (window.location.search.includes(&#39;data=&#39;)) {
+    decryptLink();
+  }
+&lt;/script&gt;
+&lt;h3 id=&#34;operation&#34;&gt;Operation&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Input&lt;/strong&gt;: Users enter the URL they want to password-protect and set a password.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Encryption&lt;/strong&gt;: Link Lock encrypts the URL and password using base64 encoding (for demonstration).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Secure Access&lt;/strong&gt;: Users visit the generated link, which prompts for the password to access the original URL.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;implementation-details&#34;&gt;Implementation Details&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backend&lt;/strong&gt;: Built with Python and Flask framework for handling requests and encryption.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend&lt;/strong&gt;: Uses HTML, CSS, and JavaScript for the user interface.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt;: Implements AES encryption for URL encryption and validation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more details and code, visit the 
+&lt;a href=&#34;https://github.com/your-username/link-lock-repo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>External Project</title>
       <link>https://pavanmathur.github.io/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>https://pavanmathur.github.io/project/external-project/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Internal Project</title>
-      <link>https://pavanmathur.github.io/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://pavanmathur.github.io/project/internal-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

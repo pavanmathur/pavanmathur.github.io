@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>appointment | Pavan Kumar</title>
+    <link>https://pavanmathur.github.io/tag/appointment/</link>
+      <atom:link href="https://pavanmathur.github.io/tag/appointment/index.xml" rel="self" type="application/rss+xml" />
+    <description>appointment</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://pavanmathur.github.io/images/icon_hu16d87cf3adcb61a4b4a6947fdebed15e_95063_512x512_fill_lanczos_center_3.png</url>
+      <title>appointment</title>
+      <link>https://pavanmathur.github.io/tag/appointment/</link>
+    </image>
+    
+    <item>
+      <title>Scheduler/appointment booking with payment</title>
+      <link>https://pavanmathur.github.io/project/booking/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://pavanmathur.github.io/project/booking/</guid>
+      <description>&lt;script src=&#34;//widget.simplybook.asia/v2/widget/widget.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    var widget = new SimplybookWidget({
+        &#34;widget_type&#34;: &#34;iframe&#34;,
+        &#34;url&#34;: &#34;https://studyintaiwan.simplybook.asia&#34;,
+        &#34;theme&#34;: &#34;minimal&#34;,
+        &#34;theme_settings&#34;: {
+            &#34;timeline_show_end_time&#34;: &#34;1&#34;,
+            &#34;timeline_modern_display&#34;: &#34;as_slots&#34;,
+            &#34;hide_company_label&#34;: &#34;0&#34;,
+            &#34;timeline_hide_unavailable&#34;: &#34;1&#34;,
+            &#34;hide_past_days&#34;: &#34;0&#34;,
+            &#34;sb_base_color&#34;: &#34;#cb8d75&#34;,
+            &#34;btn_color_1&#34;: &#34;#f8ad31,#fc591e,#fc591e&#34;,
+            &#34;link_color&#34;: &#34;#cb8d75&#34;,
+            &#34;display_item_mode&#34;: &#34;block&#34;,
+            &#34;body_bg_color&#34;: &#34;#ffffff&#34;,
+            &#34;sb_review_image&#34;: &#34;&#34;,
+            &#34;dark_font_color&#34;: &#34;#403733&#34;,
+            &#34;light_font_color&#34;: &#34;#ffffff&#34;,
+            &#34;sb_company_label_color&#34;: &#34;#aa5939&#34;,
+            &#34;hide_img_mode&#34;: &#34;1&#34;,
+            &#34;sb_busy&#34;: &#34;#c7b3b3&#34;,
+            &#34;sb_available&#34;: &#34;#2b212b&#34;
+        },
+        &#34;timeline&#34;: &#34;modern&#34;,
+        &#34;datepicker&#34;: &#34;top_calendar&#34;,
+        &#34;is_rtl&#34;: false,
+        &#34;app_config&#34;: {
+            &#34;clear_session&#34;: 0,
+            &#34;allow_switch_to_ada&#34;: 0,
+            &#34;predefined&#34;: []
+        }
+    });
+&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

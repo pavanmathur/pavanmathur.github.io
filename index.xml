@@ -151,40 +151,42 @@
       <link>https://pavanmathur.github.io/project/booking/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://pavanmathur.github.io/project/booking/</guid>
-      <description>&lt;script src=&#34;//widget.simplybook.asia/v2/widget/widget.js&#34; type=&#34;text/javascript&#34;&gt;&lt;/script&gt;
+      <description>&lt;h3 id=&#34;-complete-consultation&#34;&gt;🎓 Complete Consultation&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;For PhD students&lt;/strong&gt;: Rs. 50K INR 💰&lt;br&gt;
+&lt;strong&gt;For Master students&lt;/strong&gt;: Rs. 50K INR 💰&lt;/p&gt;
+&lt;p&gt;At EduCenter, we’re dedicated to providing the support you need for a successful educational experience. Your academic journey starts here, with personalized guidance every step of the way. 🚀&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;👨‍🏫 Mentorship with Pavan Kumar MP (Ph.D. from NSYSU, Taiwan)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📚 Personalized Major &amp;amp; School Selection Advice 🎓&lt;/li&gt;
+&lt;li&gt;✍️ SOP &amp;amp; CV Customization 📝&lt;/li&gt;
+&lt;li&gt;🧑‍🏫 Professor Shortlisting 🧑‍🏫&lt;/li&gt;
+&lt;li&gt;📧 Pre-Acceptance Coordination 📧&lt;/li&gt;
+&lt;li&gt;🏫 University Application Assistance 🏫&lt;/li&gt;
+&lt;li&gt;🎓 Scholarship Application Support 🎓&lt;/li&gt;
+&lt;li&gt;✅ Admission Confirmation ✅&lt;/li&gt;
+&lt;li&gt;📝 Letter of Recommendation (LOR) Review 📝&lt;/li&gt;
+&lt;li&gt;📄 Application Document Preparation 📄&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please wait while the page reloads the booking scheduler (Personal one-on-one Talk). ⏳🔄&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After you book the time slot, we will send you the Google Meet link. 📧🔗&lt;/li&gt;
+&lt;li&gt;We can then join the Google Meet to discuss your career goals 🎓 and consult on your purpose and path. 🛤️🌟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Scan QR code: 📲🔍&lt;br&gt;
+&lt;img src=&#34;booking-page-QR-code.png&#34; alt=&#34;Booking Page QR Code&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OR&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Choose from the dropdown menu below: ⬇️📋&lt;/p&gt;
+&lt;div id=&#34;sbw_9fzs18&#34;&gt;&lt;/div&gt;
 &lt;script type=&#34;text/javascript&#34;&gt;
-    var widget = new SimplybookWidget({
-        &#34;widget_type&#34;: &#34;iframe&#34;,
-        &#34;url&#34;: &#34;https://studyintaiwan.simplybook.asia&#34;,
-        &#34;theme&#34;: &#34;minimal&#34;,
-        &#34;theme_settings&#34;: {
-            &#34;timeline_show_end_time&#34;: &#34;1&#34;,
-            &#34;timeline_modern_display&#34;: &#34;as_slots&#34;,
-            &#34;hide_company_label&#34;: &#34;0&#34;,
-            &#34;timeline_hide_unavailable&#34;: &#34;1&#34;,
-            &#34;hide_past_days&#34;: &#34;0&#34;,
-            &#34;sb_base_color&#34;: &#34;#cb8d75&#34;,
-            &#34;btn_color_1&#34;: &#34;#f8ad31,#fc591e,#fc591e&#34;,
-            &#34;link_color&#34;: &#34;#cb8d75&#34;,
-            &#34;display_item_mode&#34;: &#34;block&#34;,
-            &#34;body_bg_color&#34;: &#34;#ffffff&#34;,
-            &#34;sb_review_image&#34;: &#34;&#34;,
-            &#34;dark_font_color&#34;: &#34;#403733&#34;,
-            &#34;light_font_color&#34;: &#34;#ffffff&#34;,
-            &#34;sb_company_label_color&#34;: &#34;#aa5939&#34;,
-            &#34;hide_img_mode&#34;: &#34;1&#34;,
-            &#34;sb_busy&#34;: &#34;#c7b3b3&#34;,
-            &#34;sb_available&#34;: &#34;#2b212b&#34;
-        },
-        &#34;timeline&#34;: &#34;modern&#34;,
-        &#34;datepicker&#34;: &#34;top_calendar&#34;,
-        &#34;is_rtl&#34;: false,
-        &#34;app_config&#34;: {
-            &#34;clear_session&#34;: 0,
-            &#34;allow_switch_to_ada&#34;: 0,
-            &#34;predefined&#34;: []
-        }
-    });
+    (function(w, d, s, i) {
+        var script = d.createElement(s);
+        script.async = true;
+        script.src = &#34;//widget.simplybook.asia/v2/widget/widget.js&#34;;
+        script.onload = function() {
+            new SimplybookWidget({&#34;widget_type&#34;:&#34;iframe&#34;,&#34;url&#34;:&#34;https:\/\/studyintaiwan.simplybook.asia&#34;,&#34;theme&#34;:&#34;minimal&#34;,&#34;theme_settings&#34;:{&#34;timeline_show_end_time&#34;:&#34;1&#34;,&#34;timeline_modern_display&#34;:&#34;as_slots&#34;,&#34;hide_company_label&#34;:&#34;0&#34;,&#34;timeline_hide_unavailable&#34;:&#34;1&#34;,&#34;hide_past_days&#34;:&#34;0&#34;,&#34;sb_base_color&#34;:&#34;#cb8d75&#34;,&#34;btn_color_1&#34;:&#34;#f8ad31,#fc591e,#fc591e&#34;,&#34;link_color&#34;:&#34;#cb8d75&#34;,&#34;display_item_mode&#34;:&#34;block&#34;,&#34;body_bg_color&#34;:&#34;#ffffff&#34;,&#34;sb_review_image&#34;:&#34;&#34;,&#34;dark_font_color&#34;:&#34;#403733&#34;,&#34;light_font_color&#34;:&#34;#ffffff&#34;,&#34;sb_company_label_color&#34;:&#34;#aa5939&#34;,&#34;hide_img_mode&#34;:&#34;1&#34;,&#34;sb_busy&#34;:&#34;#c7b3b3&#34;,&#34;sb_available&#34;:&#34;#2b212b&#34;},&#34;timeline&#34;:&#34;modern&#34;,&#34;datepicker&#34;:&#34;top_calendar&#34;,&#34;is_rtl&#34;:false,&#34;app_config&#34;:{&#34;clear_session&#34;:0,&#34;allow_switch_to_ada&#34;:0,&#34;predefined&#34;:[]},&#34;container_id&#34;:&#34;sbw_9fzs18&#34;});
+        };
+        d.head.appendChild(script);
+    })(window, document, &#39;script&#39;, &#39;sbw_9fzs18&#39;);
 &lt;/script&gt;
 </description>
     </item>
@@ -346,7 +348,7 @@ data.head()
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
-&lt;div id=&#34;chart-853914627&#34; class=&#34;chart pb-3&#34; style=&#34;max-width: 100%; margin: auto;&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-578312946&#34; class=&#34;chart pb-3&#34; style=&#34;max-width: 100%; margin: auto;&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -356,7 +358,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-853914627&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-578312946&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

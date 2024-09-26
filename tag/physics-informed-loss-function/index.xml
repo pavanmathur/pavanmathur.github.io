@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Physics-informed loss function | Pavan Kumar</title>
+    <link>https://pavanmathur.github.io/tag/physics-informed-loss-function/</link>
+      <atom:link href="https://pavanmathur.github.io/tag/physics-informed-loss-function/index.xml" rel="self" type="application/rss+xml" />
+    <description>Physics-informed loss function</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://pavanmathur.github.io/images/icon_hu16d87cf3adcb61a4b4a6947fdebed15e_95063_512x512_fill_lanczos_center_3.png</url>
+      <title>Physics-informed loss function</title>
+      <link>https://pavanmathur.github.io/tag/physics-informed-loss-function/</link>
+    </image>
+    
+    <item>
+      <title>Fine-Tuned Based Transfer Learning with Temporal Attention and Physics-Informed Loss</title>
+      <link>https://pavanmathur.github.io/publication/conference-paper_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://pavanmathur.github.io/publication/conference-paper_5/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
